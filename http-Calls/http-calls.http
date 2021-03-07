@@ -7,6 +7,9 @@ GET http://localhost:4004/catalog/Books
 
 ###
 GET http://localhost:4004/catalog/Orders
+
+###
+GET http://localhost:4004/catalog/Orders?$expand=book
 ###
 POST http://localhost:4004/catalog/Books
 Content-Type: application/json
