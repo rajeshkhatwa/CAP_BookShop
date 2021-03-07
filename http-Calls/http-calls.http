@@ -4,6 +4,8 @@ GET http://localhost:4004/catalog/Authors?$expand=books
 
 ###
 GET http://localhost:4004/catalog/Books
+###
+GET http://localhost:4004/catalog/Books?$expand=author
 
 ###
 GET http://localhost:4004/catalog/Orders
