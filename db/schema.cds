@@ -8,6 +8,7 @@ Key ID : Integer;
 title : String;
 stock : Integer;
 author : Association to  Authors;
+orders : Association to many Order on orders.book = $self;
 }
 
 entity Authors

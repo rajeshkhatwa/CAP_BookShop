@@ -3,12 +3,15 @@ GET http://localhost:4004/catalog/Authors
 GET http://localhost:4004/catalog/Authors?$expand=books
 
 ###
-GET http://localhost:4004/catalog/Books
+GET http://localhost:4006/catalog/Books
+###
+
+GET http://localhost:4006/catalog/Books?$expand=orders
 ###
 GET http://localhost:4004/catalog/Books?$expand=author
 
 ###
-GET http://localhost:4004/catalog/Orders
+GET http://localhost:4006/catalog/Orders
 
 ###
 GET http://localhost:4004/catalog/Orders?$expand=book
@@ -25,7 +28,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:4004/catalog/Orders
+POST http://localhost:4006/catalog/Orders
 Content-Type: application/json
 
 {
