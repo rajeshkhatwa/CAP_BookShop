@@ -24,7 +24,7 @@ POST http://localhost:4004/catalog/Orders
 Content-Type: application/json
 
 {
-    "book_ID" : 1,
+    "book_ID" : 3,
     "quantity" : 2
 }
 
