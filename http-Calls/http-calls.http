@@ -1,4 +1,6 @@
 GET http://localhost:4004/catalog/Authors
+###
+GET http://localhost:4004/catalog/Authors?$expand=books
 
 ###
 GET http://localhost:4004/catalog/Books
@@ -13,6 +15,16 @@ Content-Type: application/json
     "ID": 5,
     "title": "Oil & Gas",
     "stock": 21,
-    "author_ID": 501
+    "author_ID": 203
 
 }
+
+###
+POST http://localhost:4004/catalog/Orders
+Content-Type: application/json
+
+{
+    "book_ID" : 1,
+    "quantity" : 2
+}
+
