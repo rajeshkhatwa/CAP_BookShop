@@ -9,6 +9,11 @@
         "dialect": "SQLite",
         "name": "DBConnection",
         "database": "/home/user/projects/BasicNodeJS/bookshop.db"
+    },
+    {
+        "dialect": "SQLite",
+        "name": "myDB",
+        "database": "/home/user/projects/CAP_BookShop/sqlite.db"
     }
 ]
 }
